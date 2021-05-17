@@ -10,7 +10,8 @@
       </a> -->
       <a *ngFor="let termino of historial"
         href="#{{termino}}"
-        class="list-group-item list-group-item-action">
+        class="list-group-item list-group-item-action"
+        (click)="buscar(termino)">
         {{ termino | titlecase}}
       </a>
     </div>
